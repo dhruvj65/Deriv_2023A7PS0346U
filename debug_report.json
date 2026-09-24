@@ -1,0 +1,389 @@
+{
+  "mode": "llm:gemini-2.5-flash-lite",
+  "tickets": [
+    {
+      "ticket_id": "T1",
+      "message": "I deposited by bank card two hours ago but my balance still shows zero. What should I check?",
+      "predicted_intent": "deposit_issue",
+      "classifier": {
+        "method": "rules",
+        "certainty": 0.917,
+        "evidence": [
+          "deposited",
+          "bank card",
+          "balance"
+        ],
+        "notes": [
+          "LLM classifier unavailable, used rules (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin)"
+        ]
+      },
+      "retrieved": [
+        {
+          "article_id": "A1",
+          "title": "Card deposit processing times",
+          "score": 0.549634,
+          "rank": 1
+        }
+      ],
+      "generator": {
+        "method": "template",
+        "cited_article_ids": [
+          "A1"
+        ],
+        "notes": [
+          "primary generator failed (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin); used offline fallback"
+        ],
+        "replaced_llm_draft": null
+      },
+      "grounding": {
+        "grounded": true,
+        "ratio": 1.0,
+        "sentence_trace": [
+          {
+            "sentence": "Thanks for reaching out about your deposit.",
+            "source": null,
+            "support": null,
+            "kind": "boilerplate"
+          },
+          {
+            "sentence": "Card deposits are usually instant, but may be delayed by issuer checks, network issues, or pending review.",
+            "source": "A1",
+            "support": 1.0,
+            "kind": "supported"
+          },
+          {
+            "sentence": "Please confirm successful payment, check transaction history, and wait up to the documented processing window before contacting us again.",
+            "source": "A1",
+            "support": 1.0,
+            "kind": "supported"
+          }
+        ]
+      },
+      "unsupported_claims": [],
+      "confidence": 0.97,
+      "confidence_components": {
+        "classifier_certainty": 0.917,
+        "retrieval_top_score": 0.549634,
+        "retrieval_strength": 1.0,
+        "grounding_score": 1.0,
+        "conflicting": false
+      },
+      "needs_human_escalation": false,
+      "escalation_reasons": [],
+      "notes": [
+        "references the customer's own account; reply gives general KB guidance only, no account-specific facts",
+        "handled self-serve: intent 'deposit_issue' covered by retrieved KB, confidence 0.97 >= 0.55"
+      ],
+      "safety_flags": [
+        "account_specific_request"
+      ]
+    },
+    {
+      "ticket_id": "T2",
+      "message": "I forgot my password and I am not receiving the reset email.",
+      "predicted_intent": "password_reset",
+      "classifier": {
+        "method": "rules",
+        "certainty": 1.0,
+        "evidence": [
+          "password",
+          "reset",
+          "forgot",
+          "reset email"
+        ],
+        "notes": [
+          "LLM classifier unavailable, used rules (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin)"
+        ]
+      },
+      "retrieved": [
+        {
+          "article_id": "A2",
+          "title": "Password reset troubleshooting",
+          "score": 0.592095,
+          "rank": 1
+        }
+      ],
+      "generator": {
+        "method": "template",
+        "cited_article_ids": [
+          "A2"
+        ],
+        "notes": [
+          "primary generator failed (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin); used offline fallback"
+        ],
+        "replaced_llm_draft": null
+      },
+      "grounding": {
+        "grounded": true,
+        "ratio": 1.0,
+        "sentence_trace": [
+          {
+            "sentence": "Sorry you're having trouble resetting your password.",
+            "source": "A2",
+            "support": 1.0,
+            "kind": "supported"
+          },
+          {
+            "sentence": "If you do not receive a reset email, please confirm the registered email address, check spam folders, wait a few minutes, and retry.",
+            "source": "A2",
+            "support": 1.0,
+            "kind": "supported"
+          },
+          {
+            "sentence": "Repeated failed attempts may trigger temporary rate limits.",
+            "source": "A2",
+            "support": 1.0,
+            "kind": "supported"
+          }
+        ]
+      },
+      "unsupported_claims": [],
+      "confidence": 1.0,
+      "confidence_components": {
+        "classifier_certainty": 1.0,
+        "retrieval_top_score": 0.592095,
+        "retrieval_strength": 1.0,
+        "grounding_score": 1.0,
+        "conflicting": false
+      },
+      "needs_human_escalation": false,
+      "escalation_reasons": [],
+      "notes": [
+        "handled self-serve: intent 'password_reset' covered by retrieved KB, confidence 1.0 >= 0.55"
+      ],
+      "safety_flags": []
+    },
+    {
+      "ticket_id": "T3",
+      "message": "Why was my withdrawal declined after verification?",
+      "predicted_intent": "withdrawal_issue",
+      "classifier": {
+        "method": "rules",
+        "certainty": 0.833,
+        "evidence": [
+          "withdrawal",
+          "declined"
+        ],
+        "notes": [
+          "LLM classifier unavailable, used rules (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin)"
+        ]
+      },
+      "retrieved": [
+        {
+          "article_id": "A3",
+          "title": "Withdrawal review and declines",
+          "score": 0.463309,
+          "rank": 1
+        }
+      ],
+      "generator": {
+        "method": "template",
+        "cited_article_ids": [
+          "A3"
+        ],
+        "notes": [
+          "primary generator failed (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin); used offline fallback"
+        ],
+        "replaced_llm_draft": null
+      },
+      "grounding": {
+        "grounded": true,
+        "ratio": 1.0,
+        "sentence_trace": [
+          {
+            "sentence": "Thanks for reaching out about your withdrawal.",
+            "source": null,
+            "support": null,
+            "kind": "boilerplate"
+          },
+          {
+            "sentence": "Withdrawals may be declined due to incomplete verification, mismatched payment method details, compliance review, or account restrictions.",
+            "source": "A3",
+            "support": 1.0,
+            "kind": "supported"
+          }
+        ]
+      },
+      "unsupported_claims": [],
+      "confidence": 0.94,
+      "confidence_components": {
+        "classifier_certainty": 0.833,
+        "retrieval_top_score": 0.463309,
+        "retrieval_strength": 1.0,
+        "grounding_score": 1.0,
+        "conflicting": false
+      },
+      "needs_human_escalation": true,
+      "escalation_reasons": [
+        "policy-sensitive topic (outcome depends on account status / compliance review that support cannot see or promise)"
+      ],
+      "notes": [
+        "references the customer's own account; reply gives general KB guidance only, no account-specific facts"
+      ],
+      "safety_flags": [
+        "policy_sensitive",
+        "account_specific_request"
+      ]
+    },
+    {
+      "ticket_id": "T4",
+      "message": "Can you tell me which asset will go up today so I can make profit?",
+      "predicted_intent": "trading_advice_request",
+      "classifier": {
+        "method": "rules",
+        "certainty": 1.0,
+        "evidence": [
+          "which asset",
+          "go up",
+          "make profit"
+        ],
+        "notes": [
+          "LLM classifier unavailable, used rules (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin)"
+        ]
+      },
+      "retrieved": [
+        {
+          "article_id": "A5",
+          "title": "No investment or trading advice",
+          "score": 0.283398,
+          "rank": 1
+        }
+      ],
+      "generator": {
+        "method": "template",
+        "cited_article_ids": [
+          "A5"
+        ],
+        "notes": [
+          "primary generator failed (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin); used offline fallback"
+        ],
+        "replaced_llm_draft": null
+      },
+      "grounding": {
+        "grounded": true,
+        "ratio": 1.0,
+        "sentence_trace": [
+          {
+            "sentence": "Thanks for your question.",
+            "source": "A5",
+            "support": 1.0,
+            "kind": "policy_refusal"
+          },
+          {
+            "sentence": "I'm sorry, but we're not able to provide market predictions, profit guarantees, or asset recommendations.",
+            "source": "A5",
+            "support": 1.0,
+            "kind": "policy_refusal"
+          },
+          {
+            "sentence": "If you'd like to learn more, you may find our general educational resources helpful, where available.",
+            "source": "A5",
+            "support": 1.0,
+            "kind": "policy_refusal"
+          }
+        ]
+      },
+      "unsupported_claims": [],
+      "confidence": 0.9,
+      "confidence_components": {
+        "classifier_certainty": 1.0,
+        "retrieval_top_score": 0.283398,
+        "retrieval_strength": 0.708,
+        "grounding_score": 1.0,
+        "conflicting": false
+      },
+      "needs_human_escalation": false,
+      "escalation_reasons": [],
+      "notes": [
+        "trading-advice request politely refused per no-advice policy; no human needed",
+        "handled self-serve: intent 'trading_advice_request' covered by retrieved KB, confidence 0.9 >= 0.55"
+      ],
+      "safety_flags": [
+        "advice_request"
+      ]
+    },
+    {
+      "ticket_id": "T5",
+      "message": "My account was locked after too many login attempts. What do I do now?",
+      "predicted_intent": "account_lock",
+      "classifier": {
+        "method": "rules",
+        "certainty": 1.0,
+        "evidence": [
+          "locked",
+          "too many login attempts",
+          "login"
+        ],
+        "notes": [
+          "LLM classifier unavailable, used rules (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin)"
+        ]
+      },
+      "retrieved": [
+        {
+          "article_id": "A4",
+          "title": "Account lock after failed sign-in attempts",
+          "score": 0.661071,
+          "rank": 1
+        }
+      ],
+      "generator": {
+        "method": "template",
+        "cited_article_ids": [
+          "A4"
+        ],
+        "notes": [
+          "primary generator failed (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin); used offline fallback"
+        ],
+        "replaced_llm_draft": null
+      },
+      "grounding": {
+        "grounded": true,
+        "ratio": 1.0,
+        "sentence_trace": [
+          {
+            "sentence": "Sorry to hear you can't get into your account.",
+            "source": null,
+            "support": null,
+            "kind": "boilerplate"
+          },
+          {
+            "sentence": "For security reasons, repeated failed sign-in attempts can temporarily lock your account.",
+            "source": "A4",
+            "support": 1.0,
+            "kind": "supported"
+          },
+          {
+            "sentence": "Please wait for the cooldown period or use the secure recovery flow.",
+            "source": "A4",
+            "support": 1.0,
+            "kind": "supported"
+          },
+          {
+            "sentence": "Please avoid sharing account-specific details in unsecured channels.",
+            "source": "A4",
+            "support": 1.0,
+            "kind": "supported"
+          }
+        ]
+      },
+      "unsupported_claims": [],
+      "confidence": 1.0,
+      "confidence_components": {
+        "classifier_certainty": 1.0,
+        "retrieval_top_score": 0.661071,
+        "retrieval_strength": 1.0,
+        "grounding_score": 1.0,
+        "conflicting": false
+      },
+      "needs_human_escalation": false,
+      "escalation_reasons": [],
+      "notes": [
+        "references the customer's own account; reply gives general KB guidance only, no account-specific facts",
+        "handled self-serve: intent 'account_lock' covered by retrieved KB, confidence 1.0 >= 0.55"
+      ],
+      "safety_flags": [
+        "account_specific_request"
+      ]
+    }
+  ]
+}

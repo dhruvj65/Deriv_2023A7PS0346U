@@ -1,0 +1,34 @@
+# Secrets (API keys) - never commit
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test / tooling caches
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# IDE / OS
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# NOTE: .cache/llm_cache.json is committed on purpose (model responses only, no secrets)
+# so that `python validate.py` can replay LLM-mode runs without an API key.

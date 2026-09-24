@@ -1,0 +1,150 @@
+{
+  "04688c89331e0ab5e26190e0f725f6f3c7b2e064fb1cce1c0838fe9902e34c47": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A3"
+    ],
+    "refused": false,
+    "reply_draft": "Withdrawals may be declined due to incomplete verification, mismatched payment method details, compliance review, or account restrictions. We cannot provide specific reasons for declines without checking your account status. If you would like us to look into this further, please let us know."
+  },
+  "089275654ae0b1c320348ca5158225f3baefacb1301ab47af34f0f60ddac071a": {
+    "certainty": 0.95,
+    "intent": "deposit_issue"
+  },
+  "264814b4e6b8c41bf9bb15ba65f58416265b977c65930ed70adf6eaa351ce96f": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A5"
+    ],
+    "refused": true,
+    "reply_draft": "I cannot provide market predictions, profit guarantees, or asset recommendations. Our support agents are not authorized to give investment or trading advice."
+  },
+  "2923573f96b16431513c587aae79435395c122a4046e049e0b840b3c3e442f2f": {
+    "certainty": 1,
+    "intent": "trading_advice_request"
+  },
+  "34a21da1aa39cef1a445dc76fd561ef7b033a1813742c7ff5d97f045a113a1a4": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A2"
+    ],
+    "refused": false,
+    "reply_draft": "If you are not receiving a password reset email, please confirm your registered email address and check your spam or junk folder. You may also want to wait a few minutes and then retry the password reset process. Repeated failed attempts can sometimes trigger temporary rate limits."
+  },
+  "3c1c8bff7f63f359719520db9d0192ecf05e58b0962d75017c4ec84e1057981b": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A1"
+    ],
+    "refused": false,
+    "reply_draft": "Card deposits are usually instant. However, they may be delayed by issuer checks, network issues, or pending review. Please confirm successful payment and check your transaction history."
+  },
+  "5fa9a29c463da042c94e3cd605c2bcb3889fa86eb468c9515657eadd4a470aaf": {
+    "certainty": 0.95,
+    "intent": "withdrawal_issue"
+  },
+  "69fe087c0f0edd13c9578ce9d048cfca5ff2bbc21359a61d6684e6c6bf35fc8b": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A5"
+    ],
+    "refused": true,
+    "reply_draft": "We cannot provide market predictions or recommendations on which assets to buy or sell. Our support team is unable to offer investment or trading advice."
+  },
+  "7cc5ac70428f66879597f4b6828835595f717a81c52e4ef8b45388c8ab13f125": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A4"
+    ],
+    "refused": false,
+    "reply_draft": "For security reasons, repeated failed sign-in attempts can temporarily lock your account. You can wait for the cooldown period or use the secure recovery flow."
+  },
+  "833cc51e5240286b2261519cae5d2948f217abad3854498d76f1548170624245": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A1"
+    ],
+    "refused": false,
+    "reply_draft": "Card deposits are usually instant. However, they can sometimes be delayed by issuer checks, network issues, or pending review. Please confirm that your payment was successful and check your transaction history."
+  },
+  "8612d1498fd96c3a167e551dd402760dfc70fa182bf4036dd935aa6767c8019a": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A4"
+    ],
+    "refused": false,
+    "reply_draft": "For security reasons, repeated failed sign-in attempts can temporarily lock your account. You can wait for the cooldown period to end or use the secure recovery flow to regain access."
+  },
+  "8a0aa1bea3b3a042f29def3400eeac006fc5a2e9afcd7c0fd5bb3180d8d15058": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A2"
+    ],
+    "refused": false,
+    "reply_draft": "If you are not receiving a password reset email, please confirm your registered email address and check your spam folder. You may also want to wait a few minutes and then retry the password reset process. Repeated failed attempts can sometimes trigger temporary rate limits."
+  },
+  "990ef4b9a366c3844278d63d46b743689451fea8bfcb911d6ae24d42284eace7": {
+    "certainty": 1.0,
+    "intent": "account_lock"
+  },
+  "a5231a32043abbf091acd8ee1ff8f68e913677e5d0faaa4f24756a61d719c8bf": {
+    "answerable": false,
+    "cited_article_ids": [
+      "A3"
+    ],
+    "refused": false,
+    "reply_draft": "Withdrawals may be declined due to incomplete verification, mismatched payment method details, compliance review, or account restrictions. We cannot see your account details. We are passing your question to the support team."
+  },
+  "ab886b6380aed6e875bc22ac2f9ff639a51c24200423bb390e0cdec94b7bb545": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A1"
+    ],
+    "refused": false,
+    "reply_draft": "Card deposits are usually instant. However, they may be delayed by issuer checks, network issues, or pending review. Please confirm successful payment and check your transaction history."
+  },
+  "ae2e3e49c1041d2f5602ceac1a943aecc65d12bb6f068b35f140eb49b018f3ab": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A2"
+    ],
+    "refused": false,
+    "reply_draft": "If you're not receiving the password reset email, please confirm that you are checking the correct email address associated with your account and check your spam or junk folder. You may also want to wait a few minutes and then try requesting the reset email again. Repeated attempts might temporarily limit new requests."
+  },
+  "cad1787e5d64a013fa00bcd24091e5a45bdd03a3033acc0fbe381624d855eaa8": {
+    "certainty": 1.0,
+    "intent": "password_reset"
+  },
+  "d8a8c5eea59e772e3d2373474dab18b74ba41a9774fb4c92bb5b80b0f4524f77": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A1"
+    ],
+    "refused": false,
+    "reply_draft": "Card deposits are usually instant. However, they may be delayed by issuer checks, network issues, or pending review. Please confirm successful payment and check your transaction history."
+  },
+  "decb7f46f04349c6150cd2741c4abec0a81231c972e7739ce9637b644c648753": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A3"
+    ],
+    "refused": false,
+    "reply_draft": "Withdrawals can be declined for several reasons, even after verification. Common reasons include mismatched payment method details, compliance review, or account restrictions. Your withdrawal may also be under review."
+  },
+  "e5c8546d64a2ea344fcd61695af82e0649ae0f2eb6f68694598bbe41f3fdc6d8": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A3"
+    ],
+    "refused": false,
+    "reply_draft": "Withdrawals may be declined due to incomplete verification, mismatched payment method details, compliance review, or account restrictions. We are unable to provide specific reasons for declines without checking your account status. We recommend reviewing your payment method details and ensuring all verification steps are complete."
+  },
+  "ed9df5f99ebedc39d96a72f9c86ee77f733047ddcae926cd18c78efc587f1ee7": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A5"
+    ],
+    "refused": true,
+    "reply_draft": "I cannot provide any investment or trading advice, including market predictions or asset recommendations. Our support team is unable to offer guidance on which assets to buy or sell."
+  }
+}

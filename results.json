@@ -1,0 +1,71 @@
+[
+  {
+    "ticket_id": "T1",
+    "intent": "deposit_issue",
+    "retrieved_articles": [
+      "A1"
+    ],
+    "reply_draft": "Thanks for reaching out about your deposit. Card deposits are usually instant, but may be delayed by issuer checks, network issues, or pending review. Please confirm successful payment, check transaction history, and wait up to the documented processing window before contacting us again.",
+    "grounded": true,
+    "confidence": 0.97,
+    "needs_human_escalation": false,
+    "safety_flags": [
+      "account_specific_request"
+    ]
+  },
+  {
+    "ticket_id": "T2",
+    "intent": "password_reset",
+    "retrieved_articles": [
+      "A2"
+    ],
+    "reply_draft": "Sorry you're having trouble resetting your password. If you do not receive a reset email, please confirm the registered email address, check spam folders, wait a few minutes, and retry. Repeated failed attempts may trigger temporary rate limits.",
+    "grounded": true,
+    "confidence": 1.0,
+    "needs_human_escalation": false,
+    "safety_flags": []
+  },
+  {
+    "ticket_id": "T3",
+    "intent": "withdrawal_issue",
+    "retrieved_articles": [
+      "A3"
+    ],
+    "reply_draft": "Thanks for reaching out about your withdrawal. Withdrawals may be declined due to incomplete verification, mismatched payment method details, compliance review, or account restrictions. I've also passed this to our support team so they can review it for you through a secure channel.",
+    "grounded": true,
+    "confidence": 0.94,
+    "needs_human_escalation": true,
+    "safety_flags": [
+      "policy_sensitive",
+      "account_specific_request"
+    ]
+  },
+  {
+    "ticket_id": "T4",
+    "intent": "trading_advice_request",
+    "retrieved_articles": [
+      "A5"
+    ],
+    "reply_draft": "Thanks for your question. I'm sorry, but we're not able to provide market predictions, profit guarantees, or asset recommendations. If you'd like to learn more, you may find our general educational resources helpful, where available.",
+    "grounded": true,
+    "confidence": 0.9,
+    "needs_human_escalation": false,
+    "safety_flags": [
+      "advice_request"
+    ]
+  },
+  {
+    "ticket_id": "T5",
+    "intent": "account_lock",
+    "retrieved_articles": [
+      "A4"
+    ],
+    "reply_draft": "Sorry to hear you can't get into your account. For security reasons, repeated failed sign-in attempts can temporarily lock your account. Please wait for the cooldown period or use the secure recovery flow. Please avoid sharing account-specific details in unsecured channels.",
+    "grounded": true,
+    "confidence": 1.0,
+    "needs_human_escalation": false,
+    "safety_flags": [
+      "account_specific_request"
+    ]
+  }
+]
