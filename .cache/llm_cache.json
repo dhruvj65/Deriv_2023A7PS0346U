@@ -1,4 +1,12 @@
 {
+  "016eed1dd0c7b88a0b6ae9eb35d261bc561b5825ed4944960458b118aa7f7181": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A2"
+    ],
+    "refused": false,
+    "reply_draft": "If you do not receive a password reset email, please confirm your registered email address, check your spam folders, wait a few minutes, and retry. Please note that repeated failed attempts may trigger temporary rate limits."
+  },
   "04688c89331e0ab5e26190e0f725f6f3c7b2e064fb1cce1c0838fe9902e34c47": {
     "answerable": true,
     "cited_article_ids": [
@@ -10,6 +18,14 @@
   "089275654ae0b1c320348ca5158225f3baefacb1301ab47af34f0f60ddac071a": {
     "certainty": 0.95,
     "intent": "deposit_issue"
+  },
+  "123cf024d62cc3a21dbc049d3c65a90898cc9e7ffffdea4161fe472fa6dd2a2a": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A4"
+    ],
+    "refused": false,
+    "reply_draft": "Hello! For security reasons, repeated failed sign-in attempts can temporarily lock your account. You can wait for the cooldown period or use the secure recovery flow."
   },
   "264814b4e6b8c41bf9bb15ba65f58416265b977c65930ed70adf6eaa351ce96f": {
     "answerable": true,
@@ -39,9 +55,17 @@
     "refused": false,
     "reply_draft": "Card deposits are usually instant. However, they may be delayed by issuer checks, network issues, or pending review. Please confirm successful payment and check your transaction history."
   },
+  "51bf65eae5c3a196951e64cb2df157e698dc8ca4c386629d4c2722f308f073cd": {
+    "certainty": 1.0,
+    "intent": "password_reset"
+  },
   "5fa9a29c463da042c94e3cd605c2bcb3889fa86eb468c9515657eadd4a470aaf": {
     "certainty": 0.95,
     "intent": "withdrawal_issue"
+  },
+  "6399c1d7e9a1e9502e03984b8c1b6624c2bc51f88ee5fea055a3e7c793195004": {
+    "certainty": 0.99,
+    "intent": "deposit_issue"
   },
   "69fe087c0f0edd13c9578ce9d048cfca5ff2bbc21359a61d6684e6c6bf35fc8b": {
     "answerable": true,
@@ -75,6 +99,10 @@
     "refused": false,
     "reply_draft": "For security reasons, repeated failed sign-in attempts can temporarily lock your account. You can wait for the cooldown period to end or use the secure recovery flow to regain access."
   },
+  "89332c274ad5dad38f559ff83cc6fc51cda0bdd9535e132eca4441fbd2785d30": {
+    "certainty": 1.0,
+    "intent": "account_lock"
+  },
   "8a0aa1bea3b3a042f29def3400eeac006fc5a2e9afcd7c0fd5bb3180d8d15058": {
     "answerable": true,
     "cited_article_ids": [
@@ -83,9 +111,25 @@
     "refused": false,
     "reply_draft": "If you are not receiving a password reset email, please confirm your registered email address and check your spam folder. You may also want to wait a few minutes and then retry the password reset process. Repeated failed attempts can sometimes trigger temporary rate limits."
   },
+  "91e90496cef1094e225dac48c7bce12a3b727867ae479af1fe6f85c7b966e63f": {
+    "certainty": 1.0,
+    "intent": "trading_advice_request"
+  },
+  "960d47105f622da9d7507fbd3d0c54cd013d3629222afb84513f7a3dd3cbc36d": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A5"
+    ],
+    "refused": true,
+    "reply_draft": "Thank you for reaching out, but I cannot provide market predictions, profit guarantees, or asset recommendations. We encourage you to explore our general educational resources to learn more about trading."
+  },
   "990ef4b9a366c3844278d63d46b743689451fea8bfcb911d6ae24d42284eace7": {
     "certainty": 1.0,
     "intent": "account_lock"
+  },
+  "a22b369aa7b7c108b44834edced36d96140f9fcbe796f371c74dc39682a7d86d": {
+    "certainty": 0.99,
+    "intent": "withdrawal_issue"
   },
   "a5231a32043abbf091acd8ee1ff8f68e913677e5d0faaa4f24756a61d719c8bf": {
     "answerable": false,
@@ -103,6 +147,14 @@
     "refused": false,
     "reply_draft": "Card deposits are usually instant. However, they may be delayed by issuer checks, network issues, or pending review. Please confirm successful payment and check your transaction history."
   },
+  "abb429b62e2ef573f31891f592ec879d6e61e6b8a77d8665eb44c5cb38b64711": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A1"
+    ],
+    "refused": false,
+    "reply_draft": "Card deposits are usually instant, but they can sometimes be delayed due to issuer checks, network issues, or pending review. You can check your transaction history and confirm that the payment was successful. Please wait up to the documented processing window before escalating."
+  },
   "ae2e3e49c1041d2f5602ceac1a943aecc65d12bb6f068b35f140eb49b018f3ab": {
     "answerable": true,
     "cited_article_ids": [
@@ -110,6 +162,14 @@
     ],
     "refused": false,
     "reply_draft": "If you're not receiving the password reset email, please confirm that you are checking the correct email address associated with your account and check your spam or junk folder. You may also want to wait a few minutes and then try requesting the reset email again. Repeated attempts might temporarily limit new requests."
+  },
+  "b9b17db78dc202c2dc770c2686357eede5c103f7a9f6c3f5f99b6bbe6e5d1b3f": {
+    "answerable": true,
+    "cited_article_ids": [
+      "A3"
+    ],
+    "refused": false,
+    "reply_draft": "Withdrawals may be declined due to incomplete verification, mismatched payment method details, compliance review, or account restrictions."
   },
   "cad1787e5d64a013fa00bcd24091e5a45bdd03a3033acc0fbe381624d855eaa8": {
     "certainty": 1.0,

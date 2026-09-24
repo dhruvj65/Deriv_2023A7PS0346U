@@ -16,7 +16,7 @@ from typing import Any, Dict, Optional, Protocol
 
 import requests
 
-DEFAULT_MODEL = "gemini-2.5-flash-lite"
+DEFAULT_MODEL = "gemini-3.5-flash-lite"
 _API_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
 

@@ -1,20 +1,20 @@
 {
-  "mode": "llm:gemini-2.5-flash-lite",
+  "mode": "llm:gemini-3.5-flash-lite",
   "tickets": [
     {
       "ticket_id": "T1",
       "message": "I deposited by bank card two hours ago but my balance still shows zero. What should I check?",
       "predicted_intent": "deposit_issue",
       "classifier": {
-        "method": "rules",
-        "certainty": 0.917,
+        "method": "hybrid",
+        "certainty": 1.0,
         "evidence": [
           "deposited",
           "bank card",
           "balance"
         ],
         "notes": [
-          "LLM classifier unavailable, used rules (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin)"
+          "rules=deposit_issue, llm=deposit_issue"
         ]
       },
       "retrieved": [
@@ -26,13 +26,11 @@
         }
       ],
       "generator": {
-        "method": "template",
+        "method": "llm:gemini-3.5-flash-lite",
         "cited_article_ids": [
           "A1"
         ],
-        "notes": [
-          "primary generator failed (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin); used offline fallback"
-        ],
+        "notes": [],
         "replaced_llm_draft": null
       },
       "grounding": {
@@ -40,19 +38,19 @@
         "ratio": 1.0,
         "sentence_trace": [
           {
-            "sentence": "Thanks for reaching out about your deposit.",
-            "source": null,
-            "support": null,
-            "kind": "boilerplate"
-          },
-          {
-            "sentence": "Card deposits are usually instant, but may be delayed by issuer checks, network issues, or pending review.",
+            "sentence": "Card deposits are usually instant, but they can sometimes be delayed due to issuer checks, network issues, or pending review.",
             "source": "A1",
             "support": 1.0,
             "kind": "supported"
           },
           {
-            "sentence": "Please confirm successful payment, check transaction history, and wait up to the documented processing window before contacting us again.",
+            "sentence": "You can check your transaction history and confirm that the payment was successful.",
+            "source": "A1",
+            "support": 1.0,
+            "kind": "supported"
+          },
+          {
+            "sentence": "Please wait up to the documented processing window before escalating.",
             "source": "A1",
             "support": 1.0,
             "kind": "supported"
@@ -60,9 +58,9 @@
         ]
       },
       "unsupported_claims": [],
-      "confidence": 0.97,
+      "confidence": 1.0,
       "confidence_components": {
-        "classifier_certainty": 0.917,
+        "classifier_certainty": 1.0,
         "retrieval_top_score": 0.549634,
         "retrieval_strength": 1.0,
         "grounding_score": 1.0,
@@ -72,7 +70,7 @@
       "escalation_reasons": [],
       "notes": [
         "references the customer's own account; reply gives general KB guidance only, no account-specific facts",
-        "handled self-serve: intent 'deposit_issue' covered by retrieved KB, confidence 0.97 >= 0.55"
+        "handled self-serve: intent 'deposit_issue' covered by retrieved KB, confidence 1.0 >= 0.55"
       ],
       "safety_flags": [
         "account_specific_request"
@@ -83,7 +81,7 @@
       "message": "I forgot my password and I am not receiving the reset email.",
       "predicted_intent": "password_reset",
       "classifier": {
-        "method": "rules",
+        "method": "hybrid",
         "certainty": 1.0,
         "evidence": [
           "password",
@@ -92,7 +90,7 @@
           "reset email"
         ],
         "notes": [
-          "LLM classifier unavailable, used rules (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin)"
+          "rules=password_reset, llm=password_reset"
         ]
       },
       "retrieved": [
@@ -104,13 +102,11 @@
         }
       ],
       "generator": {
-        "method": "template",
+        "method": "llm:gemini-3.5-flash-lite",
         "cited_article_ids": [
           "A2"
         ],
-        "notes": [
-          "primary generator failed (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin); used offline fallback"
-        ],
+        "notes": [],
         "replaced_llm_draft": null
       },
       "grounding": {
@@ -118,21 +114,15 @@
         "ratio": 1.0,
         "sentence_trace": [
           {
-            "sentence": "Sorry you're having trouble resetting your password.",
+            "sentence": "If you do not receive a password reset email, please confirm your registered email address, check your spam folders, wait a few minutes, and retry.",
             "source": "A2",
             "support": 1.0,
             "kind": "supported"
           },
           {
-            "sentence": "If you do not receive a reset email, please confirm the registered email address, check spam folders, wait a few minutes, and retry.",
+            "sentence": "Please note that repeated failed attempts may trigger temporary rate limits.",
             "source": "A2",
-            "support": 1.0,
-            "kind": "supported"
-          },
-          {
-            "sentence": "Repeated failed attempts may trigger temporary rate limits.",
-            "source": "A2",
-            "support": 1.0,
+            "support": 0.875,
             "kind": "supported"
           }
         ]
@@ -158,14 +148,14 @@
       "message": "Why was my withdrawal declined after verification?",
       "predicted_intent": "withdrawal_issue",
       "classifier": {
-        "method": "rules",
-        "certainty": 0.833,
+        "method": "hybrid",
+        "certainty": 1.0,
         "evidence": [
           "withdrawal",
           "declined"
         ],
         "notes": [
-          "LLM classifier unavailable, used rules (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin)"
+          "rules=withdrawal_issue, llm=withdrawal_issue"
         ]
       },
       "retrieved": [
@@ -177,25 +167,17 @@
         }
       ],
       "generator": {
-        "method": "template",
+        "method": "llm:gemini-3.5-flash-lite",
         "cited_article_ids": [
           "A3"
         ],
-        "notes": [
-          "primary generator failed (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin); used offline fallback"
-        ],
+        "notes": [],
         "replaced_llm_draft": null
       },
       "grounding": {
         "grounded": true,
         "ratio": 1.0,
         "sentence_trace": [
-          {
-            "sentence": "Thanks for reaching out about your withdrawal.",
-            "source": null,
-            "support": null,
-            "kind": "boilerplate"
-          },
           {
             "sentence": "Withdrawals may be declined due to incomplete verification, mismatched payment method details, compliance review, or account restrictions.",
             "source": "A3",
@@ -205,9 +187,9 @@
         ]
       },
       "unsupported_claims": [],
-      "confidence": 0.94,
+      "confidence": 1.0,
       "confidence_components": {
-        "classifier_certainty": 0.833,
+        "classifier_certainty": 1.0,
         "retrieval_top_score": 0.463309,
         "retrieval_strength": 1.0,
         "grounding_score": 1.0,
@@ -230,7 +212,7 @@
       "message": "Can you tell me which asset will go up today so I can make profit?",
       "predicted_intent": "trading_advice_request",
       "classifier": {
-        "method": "rules",
+        "method": "hybrid",
         "certainty": 1.0,
         "evidence": [
           "which asset",
@@ -238,7 +220,7 @@
           "make profit"
         ],
         "notes": [
-          "LLM classifier unavailable, used rules (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin)"
+          "rules=trading_advice_request, llm=trading_advice_request"
         ]
       },
       "retrieved": [
@@ -250,13 +232,11 @@
         }
       ],
       "generator": {
-        "method": "template",
+        "method": "llm:gemini-3.5-flash-lite",
         "cited_article_ids": [
           "A5"
         ],
-        "notes": [
-          "primary generator failed (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin); used offline fallback"
-        ],
+        "notes": [],
         "replaced_llm_draft": null
       },
       "grounding": {
@@ -264,19 +244,13 @@
         "ratio": 1.0,
         "sentence_trace": [
           {
-            "sentence": "Thanks for your question.",
+            "sentence": "Thank you for reaching out, but I cannot provide market predictions, profit guarantees, or asset recommendations.",
             "source": "A5",
             "support": 1.0,
             "kind": "policy_refusal"
           },
           {
-            "sentence": "I'm sorry, but we're not able to provide market predictions, profit guarantees, or asset recommendations.",
-            "source": "A5",
-            "support": 1.0,
-            "kind": "policy_refusal"
-          },
-          {
-            "sentence": "If you'd like to learn more, you may find our general educational resources helpful, where available.",
+            "sentence": "We encourage you to explore our general educational resources to learn more about trading.",
             "source": "A5",
             "support": 1.0,
             "kind": "policy_refusal"
@@ -307,7 +281,7 @@
       "message": "My account was locked after too many login attempts. What do I do now?",
       "predicted_intent": "account_lock",
       "classifier": {
-        "method": "rules",
+        "method": "hybrid",
         "certainty": 1.0,
         "evidence": [
           "locked",
@@ -315,7 +289,7 @@
           "login"
         ],
         "notes": [
-          "LLM classifier unavailable, used rules (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin)"
+          "rules=account_lock, llm=account_lock"
         ]
       },
       "retrieved": [
@@ -327,13 +301,11 @@
         }
       ],
       "generator": {
-        "method": "template",
+        "method": "llm:gemini-3.5-flash-lite",
         "cited_article_ids": [
           "A4"
         ],
-        "notes": [
-          "primary generator failed (HTTP 404: This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemin); used offline fallback"
-        ],
+        "notes": [],
         "replaced_llm_draft": null
       },
       "grounding": {
@@ -341,7 +313,7 @@
         "ratio": 1.0,
         "sentence_trace": [
           {
-            "sentence": "Sorry to hear you can't get into your account.",
+            "sentence": "Hello!",
             "source": null,
             "support": null,
             "kind": "boilerplate"
@@ -353,13 +325,7 @@
             "kind": "supported"
           },
           {
-            "sentence": "Please wait for the cooldown period or use the secure recovery flow.",
-            "source": "A4",
-            "support": 1.0,
-            "kind": "supported"
-          },
-          {
-            "sentence": "Please avoid sharing account-specific details in unsecured channels.",
+            "sentence": "You can wait for the cooldown period or use the secure recovery flow.",
             "source": "A4",
             "support": 1.0,
             "kind": "supported"

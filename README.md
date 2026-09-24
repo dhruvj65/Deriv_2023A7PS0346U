@@ -40,7 +40,7 @@ python -m pytest -q
   `debug_report.json` and `debug_report.md`.
 * `python main.py --offline` never calls a model, so it needs no secrets.
 * Optional: copy `.env.example` to `.env` and set `GEMINI_API_KEY` (and optionally
-  `GEMINI_MODEL`; the default is `gemini-2.5-flash-lite`).
+  `GEMINI_MODEL`; the default is `gemini-3.5-flash-lite`).
 * `python validate.py` checks the artifacts and exits non-zero if any check fails.
 * The pytest suite runs fully offline; the LLM is mocked.
 
